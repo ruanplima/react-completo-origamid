@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../style-global.css';
 
 function App() {
   // Mostre os dados da aplicação, como aprensetado no vídeo
