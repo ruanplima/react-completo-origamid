@@ -1,11 +1,14 @@
 import React from 'react';
 import '../../style-global.css';
+import CreateContext from './CreateContext';
+import Produto from './Produto';
 
 function App() {
   return (
-    <div>
-      <h1>UseMemo e useCallback</h1>
-    </div>
+    <CreateContext.Provider value={{ nome: 'Ruan' }}>
+      <h1>UseContext</h1>
+      <Produto />
+    </CreateContext.Provider>
   );
 }
 
