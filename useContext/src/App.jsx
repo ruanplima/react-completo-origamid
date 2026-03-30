@@ -1,14 +1,14 @@
 import React from 'react';
 import '../../style-global.css';
-import CreateContext from './CreateContext';
+import { GlobalStorage } from './GlobalContext';
 import Produto from './Produto';
 
 function App() {
   return (
-    <CreateContext.Provider value={{ nome: 'Ruan' }}>
+    <GlobalStorage>
       <h1>UseContext</h1>
       <Produto />
-    </CreateContext.Provider>
+    </GlobalStorage>
   );
 }
 

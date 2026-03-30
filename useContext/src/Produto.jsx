@@ -1,11 +1,12 @@
 import React from 'react';
-import CreateContext from './CreateContext';
+import { GlobalContext } from './CreateContext';
 
 const Produto = () => {
-  const dados = React.useContext(CreateContext);
+  const { nome } = React.useContext(GlobalContext);
+
   return (
     <div>
-      <p>{dados.nome}</p>
+      <p>{nome}</p>
     </div>
   );
 };
